@@ -1,0 +1,43 @@
+body {
+    background-color: #222;
+}
+
+#layout {
+    /* background-color: #333; */
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 15px;
+}
+
+.panel {
+    background-color: #444;
+    height: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.half-panel {
+    height: 125px;
+}
+
+.one {
+    grid-column: span 4;
+}
+
+.two {
+    grid-column: span 2;
+} 
+
+.three {
+    grid-column: span 2;
+}
+
+.four {
+    grid-column: span 1;
+}
+
+.five {
+    grid-column: span 3;
+}
