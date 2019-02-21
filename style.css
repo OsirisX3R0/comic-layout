@@ -1,5 +1,22 @@
 body {
     background-color: #222;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: ghostwhite;
+    text-align: center;
+}
+
+.main-color {
+    background-color: #444;
+    color: #aaa;
+    border: 1px solid #888;
+    padding: 5px;
+}
+
+.nested-color {
+    background-color: #555;
+    color: #aaa;
+    border: 1px solid #888;
+    padding: 5px;
 }
 
 #layout {
@@ -15,29 +32,54 @@ body {
     background-color: #444;
     height: 250px;
     padding: 10px;
+    display: grid;
+    grid-gap: 15px;
     box-sizing: border-box;
 }
 
-.half-panel {
-    height: 125px;
+.panel.nest {
+    background: none;
+    padding:0px;
 }
 
-.one {
+.panel.one {
     grid-column: span 4;
 }
 
-.two {
+.panel.two {
     grid-column: span 2;
 } 
 
-.three {
+.panel.three {
     grid-column: span 2;
 }
 
-.four {
+.panel.four {
     grid-column: span 1;
 }
 
-.five {
+.panel.five {
+    grid-column: span 3;
+}
+
+.nested.panel {
+    background-color: #555;
+    height: 97px;
+    box-sizing: content-box;
+}
+
+.nested.panel.one {
+    grid-column: span 1;
+}
+
+.nested.panel.two {
+    grid-column: span 1;
+}
+
+.nested.panel.three {
+    grid-column: span 1;
+}
+
+.nested.panel.four {
     grid-column: span 3;
 }
