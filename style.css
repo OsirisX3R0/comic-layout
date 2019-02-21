@@ -5,6 +5,10 @@ body {
     text-align: center;
 }
 
+h2 {
+    text-decoration: underline;
+}
+
 .main-color {
     background-color: #444;
     color: #aaa;
@@ -32,25 +36,39 @@ body {
     background-color: #444;
     height: 250px;
     padding: 10px;
-    display: grid;
     grid-gap: 15px;
     box-sizing: border-box;
 }
 
-.panel.nest {
+.panel.nest1,
+.panel.nest2,
+.panel.nest3 {
     background: none;
     padding:0px;
+    display: grid;
+}
+
+.panel.nest1 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.panel.nest2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.panel.nest3 {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .panel.one {
     grid-column: span 4;
 }
 
-.panel.two {
-    grid-column: span 2;
-} 
-
-.panel.three {
+.panel.two,
+.panel.three,
+.panel.six,
+.panel.seven {
     grid-column: span 2;
 }
 
@@ -64,22 +82,29 @@ body {
 
 .nested.panel {
     background-color: #555;
-    height: 97px;
-    box-sizing: content-box;
+    height: 100%;
 }
 
-.nested.panel.one {
-    grid-column: span 1;
-}
-
-.nested.panel.two {
-    grid-column: span 1;
-}
-
+.nested.panel.one,
+.nested.panel.two,
 .nested.panel.three {
     grid-column: span 1;
 }
 
 .nested.panel.four {
     grid-column: span 3;
+}
+
+.nested.panel.five,
+.nested.panel.six {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.nested.panel.seven,
+.nested.panel.eight,
+.nested.panel.nine,
+.nested.panel.ten {
+    height: 100%;
+    grid-column: span 1;
 }
