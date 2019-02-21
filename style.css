@@ -48,7 +48,7 @@ h2 {
 .panel.nest2,
 .panel.nest3 {
     background: none;
-    padding:0px;
+    padding: 0px;
     display: grid;
 }
 
@@ -109,6 +109,6 @@ h2 {
 .nested.panel.eight,
 .nested.panel.nine,
 .nested.panel.ten {
-    height: 100%;
+    /* height: 100%; */
     grid-column: span 1;
 }
