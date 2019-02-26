@@ -24,16 +24,16 @@ h2 {
 }
 
 #layout {
-    width: 800px;
-    margin: auto; /* You will have to do your margins manually */
+    width: 800px; 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
 }
 
+#layout,
 #layout1,
 #layout2 {
-    margin: auto;
+    margin: auto; /* You will have to do your margins manually */
 }
 
 .panel {
